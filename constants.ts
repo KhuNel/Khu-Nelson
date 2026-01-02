@@ -1,0 +1,72 @@
+import { ActivityData, ActivityStatus } from './types';
+
+export const MOCK_DATA: ActivityData[] = [
+  {
+    no: "1",
+    activityCode: "A 2.4.3",
+    domainName: "Domain 2",
+    activityName: "Head Teacher Training",
+    operation: "Activity",
+    timeline: "8-Nov-25",
+    targetParticipants: "300",
+    participants: "200",
+    plannedTimes: 3,
+    completedTime: 2,
+    status: ActivityStatus.ON_PROCESS,
+    allocationBudget: 400000,
+    expenditure: 300000,
+    balance: 100000,
+    budgetProgress: 75
+  },
+  {
+    no: "2",
+    activityCode: "3.4.2",
+    domainName: "Domain 4",
+    activityName: "Priting KG Mateirlas",
+    operation: "Activity",
+    timeline: "20-Nov-25",
+    targetParticipants: "3000",
+    participants: "2500",
+    plannedTimes: 1,
+    completedTime: 1,
+    status: ActivityStatus.COMPLETED,
+    allocationBudget: 50000,
+    expenditure: 45000,
+    balance: 5000,
+    budgetProgress: 90
+  },
+  {
+    no: "3",
+    activityCode: "1.5.3",
+    domainName: "Domain 1",
+    activityName: "IEC Workshpt",
+    operation: "Activity",
+    timeline: "20-Aug-25",
+    targetParticipants: "30",
+    participants: "26",
+    plannedTimes: 2,
+    completedTime: 2,
+    status: ActivityStatus.COMPLETED,
+    allocationBudget: 2000,
+    expenditure: 2500,
+    balance: -500,
+    budgetProgress: 125
+  },
+  {
+    no: "4",
+    activityCode: "5.3.5",
+    domainName: "Domain 4",
+    activityName: "Office rent",
+    operation: "Operation",
+    timeline: "3-Dec-25",
+    targetParticipants: "",
+    participants: "",
+    plannedTimes: null,
+    completedTime: null,
+    status: ActivityStatus.NOT_STARTED,
+    allocationBudget: 2000,
+    expenditure: 0,
+    balance: 2000,
+    budgetProgress: 0
+  }
+];
